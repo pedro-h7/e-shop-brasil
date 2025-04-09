@@ -6,8 +6,8 @@ Projeto desenvolvido como aplicação prática para a disciplina de Banco de Dad
 
 Sistema de cadastro, consulta, atualização e exclusão de clientes usando:
 
-- **MongoDB** como banco de dados NoSQL
-- **Streamlit** como interface web
+- **MongoDB** como banco de dados NoSQL  
+- **Streamlit** como interface web  
 - **Docker** para empacotar e executar facilmente o projeto
 
 ---
@@ -23,17 +23,21 @@ Sistema de cadastro, consulta, atualização e exclusão de clientes usando:
 
 ## 🚀 Funcionalidades
 
-- ✅ Cadastrar clientes
-- ✅ Listar clientes cadastrados
-- ✅ Atualizar informações de clientes
+- ✅ Cadastrar clientes  
+- ✅ Listar clientes cadastrados  
+- ✅ Atualizar informações de clientes  
 - ✅ Excluir clientes do banco
 
 ---
 
 ## 📁 Estrutura do projeto
 
-e-shop-brasil/ ├── app.py # Aplicação principal Streamlit ├── Dockerfile # Dockerfile para containerizar o app ├── requirements.txt # Dependências do projeto ├── .gitignore # Arquivos ignorados pelo Git └── README.md # Este arquivo
-
+e-shop-brasil/
+├── app.py               # Aplicação principal Streamlit  
+├── Dockerfile           # Dockerfile para containerizar o app  
+├── requirements.txt     # Dependências do projeto  
+├── .gitignore           # Arquivos ignorados pelo Git  
+└── README.md            # Este arquivo
 
 ---
 
@@ -41,20 +45,26 @@ e-shop-brasil/ ├── app.py # Aplicação principal Streamlit ├── Dock
 
 1. Certifique-se de que o **MongoDB** está rodando (local ou via Docker):
 
-```bash
 docker run -d -p 27017:27017 --name mongodb mongo
 
 2. Depois, construa e execute o app:
 
-docker build -t e-shop-brasil-app .
+docker build -t e-shop-brasil-app .  
 docker run -d -p 8501:8501 --name streamlit_app --link mongodb e-shop-brasil-app
 
-3. Acesse a aplicação no navegador:
+3. Acesse a aplicação no navegador:  
+http://localhost:8501
 
-pip install -r requirements.txt
+---
+
+## 💻 Como executar localmente (sem Docker)
+
+pip install -r requirements.txt  
 streamlit run app.py
+
+---
 
 ## 👨‍💻 Autor
 
-Pedro Henrique da Silva Francisco
-🔗 github.com/pedro-h7
+Pedro Henrique da Silva Francisco  
+https://github.com/pedro-h7
