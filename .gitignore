@@ -1,0 +1,26 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+.env
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/config.toml
+
+# Jupyter/Notebook
+.ipynb_checkpoints/
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Sistema
+.DS_Store
+Thumbs.db
