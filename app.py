@@ -3,7 +3,7 @@ import streamlit as st
 from pymongo import MongoClient
 
 # Conectar ao MongoDB
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://mongodb:27017/")
 db = client["e_shop_brasil"]
 collection = db["clientes"]
 
